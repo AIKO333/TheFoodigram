@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*phone*/
+@media only screen and (max-width: 767px){
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-image: url("https://i.ibb.co/qW6NpRq/pexels-henry-co-2341290.jpg");
+        background-color: inherit;
+        background-position: center;
+        color: black;
+        padding: 1vw;
+        font-size: 1vw;
+        font-family: 'Raleway', sans-serif;
+    }
+    .image-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(9vw, 1fr));
+        grid-auto-rows: 20vh;
+        grid-auto-columns: center;
+        grid-gap: 20vh;
+        padding: 10px;
+    }
+    .body-container {
+        color: white;
+        text-shadow: 2px 2px 2px black;
+        padding:5vh 10vw 10vh 10vw;
+    }
+    .center-section img {
+        height: 7vw;
+    }
+    .left-section .instagram-link img {
+        width: 3vw;
+    }
+    .center-buttons {
+        padding-left: 35vw;
+        top: -25vh;
+        position: relative;
+    }
+    .left {
+        float: left;
+        margin-right: 5vw;
+    }
+    .right {
+        float: right;
+        margin-left: 5vw;
+  }
+}
+
+/*desktop*/
+@media only screen and (min-width: 768px){
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-image: url("https://i.ibb.co/qW6NpRq/pexels-henry-co-2341290.jpg");
+        background-color: inherit;
+        background-position: center;
+        color: black;
+        padding: 1vw;
+        font-size: 1.1vw;
+        font-family: 'Raleway', sans-serif;
+    }
+    .image-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(9vw, 1fr));
+        grid-auto-rows: 60vh;
+        grid-auto-columns: center;
+        grid-gap: 5vh;
+        padding: 30px;
+    }
+    .body-container {
+        color: white;
+        text-shadow: 4px 4px 2px black;
+        padding:50px 10vw 10vh 10vw;
+    }
+    .center-section img {
+        height: 5vw;
+    }
+    .left-section .instagram-link img {
+        width: 2vw;
+    }
+    .center-buttons {
+        padding-left: 35vw;
+        top: -60vh;
+        position: relative;
+    }
+    .left {
+        float: left;
+        margin-right: 10px;
+    }
+    .right {
+        float: right;
+        margin-left: 10px;
+  }
+}
+
+.left-section {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1vw;
+}
+.left-section .to-left {
+    flex: 1;
+}
+.left-section .to-right {
+    flex: 1;
+}
+
+.center-section {
+    flex: 1;
+    text-align: center;
+}
+.right-section {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 1vw;
+    text-align: center;
+}
+
+.left-section .instagram-link {
+    display: flex;
+    align-items: center;
+}
+  
+.left-section a {
+    text-decoration: none;
+    color: black;
+}
+  
+.left-section a:hover {
+    text-decoration: underline;
+}
+
+.gif {
+    display: block;
+    margin: 0 auto;
+}
+  
+.centergif {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.center {
+    text-align: center;
+}
+  
+ul {
+    list-style: none;
+}
+  
+  
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+  
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+  
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.slideInLeft {
+	animation-name: slideInLeft;
+}
+  
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        visibility: visible;
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.slideInRight {
+	animation-name: slideInRight;
+}
+
+
+@keyframes slideInRight {
+	0% {
+		transform: translateX(100%);
+		visibility: visible;
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+.fly-in {
+    animation-name: fly-in;
+}
+
+@keyframes fly-in {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0%);
+    }
+  }

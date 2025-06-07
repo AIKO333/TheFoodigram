@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>The Foodigram - Chilling Gossips</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Raleway:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="stylesforfoodigram.css">
+
+	<style>
+    /*phone*/
+    @media only screen and (max-width: 767px){
+      body{
+        font-size: 5vw;
+      }
+      .eye{
+        margin-top: -10vh;
+        opacity: 0.8;
+      }
+    }
+    /*desktop*/
+    @media only screen and (min-width: 768px){
+      body{
+        font-size: 3vw;
+      }
+      .eye{
+        margin-top: -35vh;
+        opacity: 0.7;
+      }
+    }
+        body  
+        {  
+            background-image:url("https://i.ibb.co/dLqJpm7/pexels-eneida-nieves-915002.jpg"); 
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: black;
+            font-family: 'Delicious Handrawn', cursive;
+        }  
+
+        h1{
+            text-shadow: 10px 10px 10px gray;
+            color: white;
+        }
+
+        p{
+            text-shadow: 5px 5px 10px gray;
+            color: white;
+        }
+
+	</style>
+
+</head>
+
+<body>
+  <audio id="bg-music-3" loop autoplay>
+    <source src="scarymoosic.mp3" type="audio/mpeg">
+  </audio>
+
+  <header> 
+    <img src="https://i.ibb.co/LgVzzqQ/eyes.gif" class="centergif eye" style="width:100vw;">
+    <div class="center animated slideInLeft">
+        <h1>Chilling Gossips</h1>
+    </div>
+</header>
+
+  <br><hr><br>
+
+	<main>
+		<div class="center animated slideInLeft">
+			<p>The Exploding Can of Biscuits: In 2002, a woman in Oklahoma opened a can of Pillsbury biscuits and was hit in the face by hot dough that had exploded out of the can. She suffered severe burns and had to undergo surgery. It turned out that the can had been contaminated with a strain of bacteria that produced gas and caused the can to burst.</p>
+            <br>
+            <p>The Fingertip in the Chili: In 2005, a woman in California claimed to have found a human fingertip in her Wendy's chili. The story made national news and caused a great deal of concern, but it turned out to be a hoax. The woman had planted the fingertip herself in an attempt to extort money from the restaurant.</p>
+            <br>
+            <p>The Rat in the Loaf of Bread: In 2011, a woman in England was shocked to find a dead rat inside a loaf of bread she had purchased from a local supermarket. The discovery led to an investigation and a recall of the affected bread.</p>
+            <br>
+            <p>The Poisoned Halloween Candy: Every year, there are rumors of people putting poison or razor blades in Halloween candy. While there have been a few isolated incidents over the years, they are extremely rare. Nevertheless, the fear of tainted candy has led many parents to closely inspect their children's loot before allowing them to eat it.</p>
+            <br>
+            <p>The Deadly Mushroom: Every year, people are hospitalized or even killed after eating poisonous mushrooms they have picked themselves. Some species of mushrooms can be highly toxic, and it can be difficult to tell them apart from safe varieties. It's always best to buy mushrooms from a reputable source rather than taking the risk of picking them yourself.</p>
+        <br><br>
+        </div>
+	</main>
+    
+</body>
+
+<script>
+  window.addEventListener('load',function(){
+       var audio = document.getElementById('bg-music-3');
+       document.addEventListener("click", function() {
+    audio.play();
+  });
+     });
+   </script>
+
+<footer>
+  <div class="left-section">
+    <div class="to-left">Visit our other platforms: 
+      <div class="instagram-link">
+        <a href="https://www.instagram.com/__thefoodigram_/">
+          <img src="https://i.ibb.co/cbQKxVm/instagram-Logo-PNG-Transparent-Background-download.png"> 
+          @__thefoodigram_
+        </a>
+      </div>
+    </div>
+    <div class="to-right">Contact us: 
+      <a href="mailto:thefoodigramscetw@gmail.com">thefoodigramscetw@gmail.com</a>
+    </div>
+  </div>
+  <div class="center-section">
+    <img src="https://i.ibb.co/z5mWkgj/IMG-20230324-154251.png">
+  </div>
+  <div class="right-section">
+    <ul>
+      <li>Created by:</li>
+      <li>Ayesha Mahaboob • Syeda Rania Mahek • Huda Tariq</li>
+    </ul>
+  </div>
+</footer>
+
+</html>
